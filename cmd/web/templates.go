@@ -1,6 +1,7 @@
 package main
 
 import (
+	"gyu-young-park/snippetbox/pkg/forms"
 	"gyu-young-park/snippetbox/pkg/models"
 	"path/filepath"
 	"text/template"
@@ -9,6 +10,7 @@ import (
 
 type templateData struct {
 	CurrentYear int
+	Form        *forms.Form
 	Snippet     *models.Snippet
 	Snippets    []*models.Snippet
 }
